@@ -61,13 +61,13 @@ function createTodoItem(todoText) {
   
   // Function to play DING Sound Effects.mp3 
   function playDingSound() {
-    const audio = new Audio('/ding/DING Sound Effects.mp3');
+    const audio = new Audio('ding/DING Sound Effects.mp3');
     audio.play();
   }
 
   // Function to play Windows Error (Sound effect).mp3 
   function playErrorSound() {
-    const ErrAudio = new Audio('/ding/Windows Error (Sound effect).mp3');
+    const ErrAudio = new Audio('ding/Windows Error (Sound effect).mp3');
     ErrAudio.play();
   }
 
