@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #2c3e50;
+  }
+  
+  .todo-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aliceblue;
+  }
+  
+  input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #0c7588;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .todo-item.completed {
+    text-decoration: line-through;
+    color: #95a5a6;
+    
+  }
+  
+  .todo-item.deleted {
+    background-color: #ff0000; 
+    transition: background-color .1s ease; 
+    animation: fadeOut 1s;
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  @keyframes fadeIn {
+    100% { opacity: 1; }
+    0% { opacity: 0; }
+  }
+
+  .checked {
+    background-color: #479b47; 
+    transition: background-color 1s ease-in; 
+    animation: fadeIn 2s;
+}
+
+span{
+    font-family: 'Indie Flower', cursive;
+    padding-right: 20px;
+}
