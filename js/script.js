@@ -67,8 +67,8 @@ function createTodoItem(todoText) {
 
   // Function to play Windows Error (Sound effect).mp3 
   function playErrorSound() {
-    const ErrAudio = new Audio('//ding/Windows Error (Sound effect).mp3');
-    ErrAudio.play();
+    const errAudio = new Audio('//ding/Windows Error (Sound effect).mp3');
+    errAudio.play();
   }
 
 
